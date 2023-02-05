@@ -55,7 +55,7 @@ Input data should take the form of an (n x m) pandas array with n reflectance da
 ![input](./figs/example-input.png)
 
 Spectra with only a single peak will output a single band gap value based on the linear regression fit:
-![1peak](./example-data/example-output/AF_FA0.5Cs0.5PbI3.png)
+<img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30" />
 
 However, spectra with more than one clear peak will output multiple band gap values, one for each peak based on the linear regression fit:
 | ![2peak_a](./example-data/example-output/AF_FA0.5Cs0.5PbI3.png) | ![2peak_b](./example-data/example-output/TF_Cs0.25FA0.75PbI3_bandgap2.png) |
