@@ -60,7 +60,8 @@ Spectra with only a single peak will output a single band gap value based on the
 <img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30%" />
 
 However, spectra with more than one clear peak will output multiple band gap values, one for each peak based on the linear regression fit:
-| ![2peak_a](./example-data/example-output/AF_FA0.5Cs0.5PbI3.png) | ![2peak_b](./example-data/example-output/TF_Cs0.25FA0.75PbI3_bandgap2.png) |
+
+| <img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30%" /> | <img src="./example-data/example-output/TF_Cs0.25FA0.75PbI3_bandgap2.png" width="30%" /> |
 
 If there are multiple band gap values extracted for a single spectra, the band gap associated with the highest intensity peak signal will be output first as `bandgap0` and the following band gaps will follow this pattern. Images illustrating the Tauc plot, regression fit, and band gap will be saved to the `savepath` location specified by the variable in the `autoextract(savepath=)` definition. In this path, a csv file of extracted band gaps will be saved with the following format:
 ![output](./figs/example-output.png)
