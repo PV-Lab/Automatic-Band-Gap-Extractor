@@ -57,7 +57,9 @@ Input data should take the form of an (n x m) pandas array with n reflectance da
 
 Spectra with only a single peak will output a single band gap value based on the linear regression fit:
 
-<img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30%" />
+| Spectra with a single extractable band gap |
+| ------------------------------------------ |
+| <img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30%" /> |
 
 However, spectra with more than one clear peak will output multiple band gap values, one for each peak based on the linear regression fit:
 
