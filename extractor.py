@@ -1,3 +1,6 @@
+# Author: Alexander (Aleks) E. Siemenn <asiemenn@mit.edu>
+# Date:   05 February 2023
+
 # import
 import pandas as pd
 import matplotlib.pyplot as plt
