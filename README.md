@@ -52,10 +52,12 @@ Package installation requirements can be found in the [requirements.txt](./requi
 A demonstration of using the automatic band gap extractor package can be found in the [example.ipynb](./example.ipynb) file. The automatic band gap extractor code itself can be found in the [extractor.py](./extractor.py) file under the `autoextract()` definition.
 
 Input data should take the form of an (n x m) pandas array with n reflectance data points and (m - 1) measured spectra, where m = 0 is the wavelength. Below is an example of the input data format with 12 measured reflectance spectra and the wavelength values in the m = 0 column:
+
 ![input](./figs/example-input.png)
 
 Spectra with only a single peak will output a single band gap value based on the linear regression fit:
-<img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30" />
+
+<img src="./example-data/example-output/AF_FA0.5Cs0.5PbI3.png" width="30%" />
 
 However, spectra with more than one clear peak will output multiple band gap values, one for each peak based on the linear regression fit:
 | ![2peak_a](./example-data/example-output/AF_FA0.5Cs0.5PbI3.png) | ![2peak_b](./example-data/example-output/TF_Cs0.25FA0.75PbI3_bandgap2.png) |
