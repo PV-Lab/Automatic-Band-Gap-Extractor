@@ -1,6 +1,7 @@
 # Automatic-Band-Gap-Extractor
 
-Author: Alexander (Aleks) E. Siemenn <asiemnn@mit.edu>, 05 Feb. 2023
+Author: Alexander (Aleks) E. Siemenn \<asiemnn@mit.edu\>
+Date:   05 Feb. 2023
 
 # Table of Contents
 - [How to Cite](#how-to-cite)
@@ -50,5 +51,5 @@ Package installation requirements can be found in the [requirements.txt](./requi
 A demonstration of using the automatic band gap extractor package can be found in the [example.ipynb](./example.ipynb) file. The automatic band gap extractor code itself can be found in the [extractor.py](./extractor.py) file under the `autoextract()` definition.
 
 Input data should take the form of an (n x m) pandas array with n reflectance data points and (m - 1) measured spectra, where m = 0 is the wavelength:
-![input](./figs/raw-data.png)
+![input](./figs/example-input.png)
 
