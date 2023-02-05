@@ -1,6 +1,7 @@
 # Automatic-Band-Gap-Extractor
 
 Author: Alexander (Aleks) E. Siemenn \<asiemnn@mit.edu\>
+
 Date:   05 Feb. 2023
 
 # Table of Contents
@@ -50,6 +51,14 @@ Package installation requirements can be found in the [requirements.txt](./requi
 
 A demonstration of using the automatic band gap extractor package can be found in the [example.ipynb](./example.ipynb) file. The automatic band gap extractor code itself can be found in the [extractor.py](./extractor.py) file under the `autoextract()` definition.
 
-Input data should take the form of an (n x m) pandas array with n reflectance data points and (m - 1) measured spectra, where m = 0 is the wavelength:
+Input data should take the form of an (n x m) pandas array with n reflectance data points and (m - 1) measured spectra, where m = 0 is the wavelength. Below is an example of the input data format with 12 measured reflectance spectra and the wavelength values in the m = 0 column:
 ![input](./figs/example-input.png)
 
+Spectra with only a single peak will output a single band gap value based on the linear regression fit:
+![1peak](./example-data/example-output/AF_FA0.5Cs0.5PbI3.png)
+
+However, spectra with more than one clear peak will output multiple band gap values, one for each peak based on the linear regression fit:
+| ![2peak_a](./example-data/example-output/AF_FA0.5Cs0.5PbI3.png) | ![2peak_b](./example-data/example-output/TF_Cs0.25FA0.75PbI3_bandgap2.png) |
+
+If there are multiple band gap values extracted for a single spectra, the band gap associated with the highest intensity peak signal will be output first as `bandgap0` and the following band gaps will follow this pattern. Images illustrating the Tauc plot, regression fit, and band gap will be saved to the `savepath` location specified by the variable in the `autoextract(savepath=)` definition. In this path, a csv file of extracted band gaps will be saved with the following format:
+![output](./figs/example-output.png)
