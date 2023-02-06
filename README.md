@@ -30,7 +30,7 @@ If you use this package for your research, please cite the following paper:
 
 # Description:
 
-This package automatically extracts the band gap from an array of multiple measured reflectance spectra samples.
+This package automatically extracts the direct band gap from an array of multiple measured reflectance spectra samples.
 
 **Steps for Extracting Band Gap:**
 
