@@ -63,6 +63,6 @@ However, spectra with more than one clear peak will output multiple band gap val
 | ---------- | ----------- |
 | <img src="./example-data/example-output/TF_Cs0.25FA0.75PbI3.png" width="100%" /> | <img src="./example-data/example-output/TF_Cs0.25FA0.75PbI3_bandgap2.png" width="100%" /> |
 
-If there are multiple band gap values extracted for a single spectra, the band gap associated with the highest intensity peak signal will be output first as `bandgap0` and the following band gaps will follow this pattern. Images illustrating the Tauc plot (black curve), regression fit (dashed blue line), and band gap (red line) will be saved to the `savepath` location specified by the variable in the `autoextract(savepath=)` definition. In this path, a csv file of extracted band gaps will be saved with the following format:
+If there are multiple band gap values extracted for a single spectra, the band gap associated with the highest intensity peak signal will be output first as `bandgap0` and the following band gaps will follow this naming convention as `bandgap1`, `bandgap2`, . . . Images illustrating the Tauc plot (black curve), regression fit (dashed blue line), and band gap (red line) will be saved to the `savepath` location specified by the variable in the `autoextract(savepath=)` definition. In this path, a csv file of extracted band gaps will be saved with the following format:
 
 ![output](./figs/example-output.png)
