@@ -112,7 +112,7 @@ def autoextract(data, csvname, savepath, intensity_scale=10000, verbose=False):
             np.arctan(np.array(m)[sort_mask]))  # calcualte inclination angles between segment slopes and x-axis
 
         # second smooth of tauc plot just to get clear signal for peaks
-        tauc_smooth_2 = scipy.signal.savgol_filter(TAUC_Y, window_length=300, polyorder=3, axis=0).reshape(-1)
+        tauc_smooth_2 = scipy.signal.savgol_filter(TAUC_Y, window_length=301, polyorder=3, axis=0).reshape(-1)
         peaks = scipy.signal.find_peaks(tauc_smooth_2, height=200,
                                         width=(0, 999999))  # only find peaks with height TPs>20
 
