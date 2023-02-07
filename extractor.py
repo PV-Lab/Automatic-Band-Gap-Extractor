@@ -20,7 +20,7 @@ def autoextract(data, csvname, savepath, intensity_scale=10000, verbose=False):
         csvname:           Name of the csv to be saved with the extracted band gaps of all (m - 1) spetra
         savepath:          Local file path to save Tauc plot images and band gap csv to
         intensity_scale:   The value to divide the raw reflectance intensity by to output a decimal E [0,1]
-                           For the Spectronon PikaL, intensity_scale = 10000
+                           For the Resonon PikaL, intensity_scale = 10000
         verbose:           If True, plots the fitted band gap line and Tauc plot inline
 
     Outputs:

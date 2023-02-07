@@ -30,7 +30,7 @@ If you use this package for your research, please cite the following paper:
 
 # Description:
 
-This package automatically extracts the band gap from an array of multiple measured reflectance spectra samples.
+This package automatically extracts the direct band gap from an array of multiple measured reflectance spectra samples.
 
 **Steps for Extracting Band Gap:**
 
@@ -52,6 +52,8 @@ A demonstration of using the automatic band gap extractor package can be found i
 Input data should take the form of an (n x m) pandas array with n reflectance data points and (m - 1) measured spectra, where m = 0 is the wavelength. Below is an example of the input data format with 12 measured reflectance spectra and the wavelength values in the m = 0 column:
 
 ![input](./figs/example-input.png)
+
+Our reflectance spectra are measured using a [Resonon Pika L](https://resonon.com/Pika-L) hyperspectral camera that has a 10,000 point scaling factor for reflectance intensity. Hence, to convert these reflectance spectra from 10,000 percentage points to a decimal $\in [0,1]$, we set `autoextract(intensity_scale=10000)`.
 
 Spectra with only a single peak will output a single band gap value based on the linear regression fit:
 
